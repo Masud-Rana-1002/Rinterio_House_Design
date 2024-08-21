@@ -1,11 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rin</title>
+    <!-- daisyUI & tailwindcss  CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Css link  -->
+     <link rel="stylesheet" href="style.css">
+    <title>Rinterio_House_Design</title>
 </head>
-<body>
-    
+
+<body class="manrope container mx-auto bg-gray-50 pt-5 ">
+    <!-- Header start here -->
+    <header class="bg-gradient-to-r from-white to-blue-[rgba(255, 255, 255, 0)]">
+        <!-- Nav bar start here -->
+        <nav >
+            <div class="navbar  flex justify-between">
+                <div class="">
+                    <a class="btn btn-ghost text-2xl md:text-3xl font-extrabold "><svg class="w-8 h-8 bg-lime-300 rounded-full p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg>
+                      Rinterio</a>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                    <ul class="menu menu-horizontal px-1 ">
+                      <li class="hover:font-extrabold"><a>Home</a></li>
+                      <li class="hover:font-extrabold"><a>Services</a></li>
+                      <li class="hover:font-extrabold"><a>Portfolio</a></li>
+                      <li class="hover:font-extrabold"><a>Blogs</a></li>
+                      <li class="hover:font-extrabold"><a>Contact Us</a></li>
+                    </ul>
+                  </div>
+               
+                <div class="">
+                    <div class="hidden  lg:flex flex-row justify-center items-center space-x-3">
+                        <div>
+                            <svg class="w-10 h-10 p-1 rounded-full  bg-white   text-black border border-[rgb(233, 233, 233);]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                              </svg>
+                        </div>
+                        <div>
+                            <svg class="w-10 h-10 p-1 rounded-full  bg-white   text-black border border-[rgb(233, 233, 233);]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                              </svg>
+                              
+                        </div>
+                          
+                        <a class="btn text-xl font-extrabold bg-lime-300 rounded-3xl">Book Consult <svg class="w-8 h-8 text-white bg-black rounded-full p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                          </svg></a>
+                      </div>
+                    <div class="dropdown relative">
+                      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                      </div>
+                      <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow absolute top-6 right-8  justify-center items-center font-extrabold">
+                        <li class="hover:font-extrabold"><a>Home</a></li>
+                        <li class="hover:font-extrabold"><a>Services</a></li>
+                        <li class="hover:font-extrabold"><a>Portfolio</a></li>
+                        <li class="hover:font-extrabold"><a>Blogs</a></li>
+                        <li class="hover:font-extrabold"><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    
+                  </div>
+              </div>
+        </nav>
+        <!-- Nav bar end here -->
+        <!-- banner section start here -->
+        <div>
+            <div class=" p-10">
+                <div class="hero-content text-center flex-col  mx-auto">
+                    <div>
+                        <img src="./assets/banner.png" alt="">
+                    </div>
+                  <div class="max-w-4xl ">
+                    <h1 class="text-3xl lg:text-6xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6 max-w-3xl font-medium ">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                    </p>
+                    <button class="btn text-xl font-bold md:font-extrabold bg-btn_sc rounded-3xl">View Details<svg class="w-8 h-8 text-black bg-btn_sc_arrow rounded-full p-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                      </svg></button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <!-- banner section end here -->
+    </header>
+    <!-- Header end here -->
+    <!-- main Section start here -->
+     <main>
+        <section>
+
+        </section>
+     </main>
+    <!-- main Section end here -->
+     
+<!-- tailwind config link-->
+<script src="customizingConfig.js"></script>
 </body>
+
 </html>
